@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return render_template('./index.html')
+    return render_template('index.html')
 
 @app.route('/.well-known/pki-validation/7FBF967CD2041427C74FB9D71D3E7013.txt')
 def certificate():
